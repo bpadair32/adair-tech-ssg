@@ -1,0 +1,12 @@
+{%extends "layout.html"%}
+{%block head%}
+<title>Brad Adair - AWS, Infrastructure, Linux, Tech</title>
+{%endblock%}
+{%block body%}
+<main>
+    {%for post in posts%}
+    <h2><a href="posts/{{ post.slug }}.html">{{ post.title }}</a></h2>
+    <small>{{ post.publishDate }}</small>
+    <p>{{ post.summary }}</p>
+    {%endfor%}
+</main>
